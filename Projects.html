@@ -10,6 +10,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body class="is-preload">
 
@@ -24,11 +26,8 @@
 								<header id="header">
 									<a href="index.html" class="logo"><strong>Portfolio</strong> by Prathyush Kruthiventi</a>
 									<ul class="icons">
-										<li><a href="https://www.linkedin.com/in/prathyush-k/" target="_blank" class="icon brands fa-facebook-f"><span class="label">Linkedin</span></a></li>
-										<li><a href="https://github.com/Prathyush-k	" target="_blank" class="icon brands fa-twitter"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+										<li><a href="https://www.linkedin.com/in/prathyush-k/" target="_blank" class="icon brands"><span class="label"><i class="fa fa-linkedin-square"></i> Linkedin</span></a></li>
+										<li><a href="https://github.com/Prathyush-k	" target="_blank" class="icon brands"><span class="label"><i class="fa fa-github"></i> Github</span></a></li>
 									</ul>
 								</header>
 
@@ -38,11 +37,6 @@
 										<h1>Projects</h1>
 									</header>
 
-									<p>This section covers all the major projects I have worked on.</p>	
-									<!--<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-									<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
-									-->
 									<hr class="major" id ="DAAHS" />
 									<h2>Detection of Armed Assailants in Hostage Situations</h2>
 									<a href="projects.html#DAAHS" class="image title"><img src="images/DAAHS.png" alt="" /></a>
@@ -60,6 +54,7 @@
 									<p>Two models were implemented for this task. Firstly, a custom Convolutional Neural Network (CNN) model was built from scratch and trained using the available data. Secondly, Transfer Learning was applied by utilizing a pre-trained Resnet50 model trained on the imagenet dataset to identify facial emotions. Since the dataset provided was grayscale, the grayscale layer was replicated three times to make the image appear as RGB input for the pre-trained model.</p>
 									<p></p>
 									<a href="projects.html#FER" class="image title"><img src="https://github.com/Prathyush-k/Facial-Emotion-Recognition/raw/main/Outputs/Disgust.jpg" height="300px"  alt="" /></a> &#09 <a href="projects.html#FER" class="image title"><img src="https://github.com/Prathyush-k/Facial-Emotion-Recognition/blob/main/Outputs/Happy.jpg?raw=true" height="300px"  alt="" /></a>	
+									<p></p>
 									<p>The CNN model obtained an accuracy of 59%, while the Resnet50 model achieved an accuracy of 76%. It is worth noting that the accuracy of the Resnet50 model could potentially be improved further with additional computational power and extensive training. This project showcases my ability to employ machine learning and deep learning techniques to tackle complex image recognition tasks.</p>
 									
 
@@ -70,7 +65,7 @@
 									<p></p>
 									<p>The objective of the project was to explore and analyze the usage of ChatGPT through sentiment analysis, visualization, and topic modeling techniques. The goal is to gain insights into how ChatGPT is used and what people say about it on Twitter.</p>
 									<p>The data pre-processing step involves removing null and duplicate values, eliminating stopwords, emails, and URLs, converting emojis into text representations for semantic preservation, normalizing text, and removing special characters, extra spaces, and usernames. Descriptive analysis is conducted using Word Cloud visualization to highlight the main words and topics used in the tweets during the specified time period.</p>
-									<p>Latent Dirichlet Allocation (LDA) topic modeling is implemented to separate the data into 10 topics, with grid search optimization to select the best parameters. Sentiment analysis is performed using Hugging Face models, indicating that the overall sentiment in the top 10,000 tweets is mostly neutral and positive, with minimal negative sentiment. Sentiment analysis graphs are plotted for each topic generated by LDA topic modeling, focusing on selected related topics.</p>
+									<p><strong>Dirichlet Allocation (LDA) topic modeling</strong> is implemented to separate the data into 10 topics, with grid search optimization to select the best parameters. <strong> Sentiment analysis</strong> is performed using Hugging Face models, indicating that the overall sentiment in the top 10,000 tweets is mostly neutral and positive, with minimal negative sentiment. Sentiment analysis graphs are plotted for each topic generated by LDA topic modeling, focusing on selected related topics.</p>
 									<a href="projects.html#ChatGPT" class="image title"><img src="https://github.com/Prathyush-k/ChatGPT-Tweet-Analysis/blob/main/outputs/sentiment_analysis.png?raw=true" height="400px"  alt="" /></a>
 
 									<hr class="major" id = "PoP"/>
@@ -91,11 +86,12 @@
 						<div class="inner">
 
 							<!-- Search -->
-								<section id="search" class="alt">
+							<!--	<section id="search" class="alt">
 									<form method="post" action="#">
 										<input type="text" name="query" id="query" placeholder="Search" />
 									</form>
 								</section>
+							-->
 
 							<!-- Menu -->
 								<nav id="menu">
@@ -106,7 +102,7 @@
 										<li><a href="index.html">Homepage</a></li>
 										<li><a href="workexp.html">Work Experience</a></li>
 										<li><a href="projects.html">Projects</a></li>
-										<li><a href="#">Adipiscing</a></li>
+										<!--<li><a href="#">Adipiscing</a></li>-->
 										<li>
 											<span class="opener">Contact Me</span>
 											<ul>
@@ -116,39 +112,14 @@
 												
 											</ul>
 										</li>
-										<li><a href="#">Maximus Erat</a></li>
-									</ul>
-								</nav>
-
-							<!--Section 
-								<section>
-									<header class="major">
-										<h2>Ante interdum</h2>
-									</header>
-									<div class="mini-posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-									</div>
-									<ul class="actions">
-										<li><a href="#" class="button">More</a></li>
-									</ul>
-								</section>-->
 
 							<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-								</footer>
-
+							<footer id="footer">
+								<p class="copyright">&copy; Untitled. All rights reserved.
+									<a href="https://unsplash.com">Demo Images: Unsplash</a>
+									<a href="https://html5up.net">Design: HTML5 UP</a>
+								</p>
+							</footer>
 						</div>
 					</div>
 
